@@ -1,0 +1,20 @@
+{
+  "name": "fan-db",
+  "version": "1.0.0",
+  "description": "This app will store fan prediction of epl games",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alison Saim",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "node": "^23.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
