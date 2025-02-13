@@ -89,11 +89,6 @@ app.get('/all', async(req, res) => {
 });
 
 
-app.get("/profile", (req, res) => {
-  res.render("profile");
-});
-
-
 app.listen(Port, () => {
   console.log('Express server listening on port', Port)
 });

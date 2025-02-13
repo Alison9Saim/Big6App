@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>All Predictions</title>
+        <title>Home</title>
         <link rel="stylesheet" type="text/css" href="css/all.css"/>
+
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -17,7 +18,7 @@
         <div class="container" style="padding-bottom: 100px;">
 
             <table class="table table-striped">
-                <thead class="thead-dark">
+                <thead style="position: sticky;top: 0" class="thead-dark">
                     <tr class="header">
                         <th class="header" scope="col"> <%= data[0][0] %> </th>
                         <th class="header" scope="col"> <%= data[0][1] %> </th>
@@ -47,10 +48,10 @@
                     <td>                         
                         <!--Step 1: Check if 100% correct result (Green ICON)-->
                         <% if(data[i][6] ==  data[i][3]+"-"+data[i][4]) { %>
-                            <h6>Correct Result: +3 Points</h6>
+                            <h6>Correct Result: +3 Points </h6>
 
                             <% } else if ( (data[i][3] > data[i][4] &&  data[i][7] > data[i][8]) ||  (data[i][4] > data[i][3] &&  data[i][8] > data[i][7]) || (data[i][3] - data[i][4] == 0 && data[i][8] - data[i][7] == 0)) { %>  
-                            <h6>Correct Outcome: +1 Point</h6>
+                            <h6> +1 Point</h6>
                          <% } %>
                     </td>    
                 </tr>
