@@ -45,7 +45,7 @@ app.get('/', async(req, res) => {
   //res.send(metaData.data.sheets[0]);
 
   //res.render("index",{ data: getRows.data.values});
-  res.render("index",{ data: getRows.data.values});
+
 });
 
 
